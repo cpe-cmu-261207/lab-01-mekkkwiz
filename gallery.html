@@ -13,17 +13,65 @@
 			<a href = "gallery.html">Gallery</a>
 			<a href = "contact.html">Contact</a>
 		</h1>
-		
-		<img width ="40%" src = "img/me.jpeg"></img><br>
-		<img width ="40%" src = "img/1.jpeg"></img><br>
-		<img width ="40%" src = "img/2.jpeg"></img><br>
-		<img width ="40%" src = "img/3.jpeg"></img><br>
-		<img width ="40%" src = "img/4.jpeg"></img><br>
-		<img width ="40%" src = "img/5.jpeg"></img><br>
-		<img width ="40%" src = "img/6.jpeg"></img><br>
-		<img width ="40%" src = "img/7.jpeg"></img><br>
-			
-			
+		<style>
+		.row {
+			display: -ms-flexbox;
+			display: flex;
+			-ms-flex-wrap: wrap;
+			flex-wrap: wrap;
+			padding: 0 4px;
+		  }
+		  
+	
+		  .column {
+			-ms-flex: 25%; 
+			flex: 25%;
+			max-width: 25%;
+			padding: 0 4px;
+		  }
+		  
+		  .column img {
+			margin-top: 8px;
+			vertical-align: middle;
+			width: 100%;
+		  }
+		  
+		  @media screen and (max-width: 800px) {
+			.column {
+			  -ms-flex: 50%;
+			  flex: 50%;
+			  max-width: 50%;
+			}
+		  }
+		  
+		  @media screen and (max-width: 600px) {
+			.column {
+			  -ms-flex: 100%;
+			  flex: 100%;
+			  max-width: 100%;
+			}
+		  }
+		  </style>
+		  <body>
+	
+	
+		  	<div class="row"> 
+				<div class="column">
+					<img width ="40%" src = "img/me.jpeg"></img><br>
+					<img width ="40%" src = "img/1.jpeg"></img><br>
+					<img width ="40%" src = "img/2.jpeg"></img><br>
+					
+				</div>
+				<div class="column">
+					<img width ="40%" src = "img/3.jpeg"></img><br>
+					<img width ="40%" src = "img/4.jpeg"></img><br>
+				</div>  
+				<div class="column">
+					<img width ="40%" src = "img/6.jpeg"></img><br>
+					<img width ="40%" src = "img/7.jpeg"></img><br>
+					<img width ="40%" src = "img/5.jpeg"></img><br>
+				</div>
+			</div>
 		</p>
 	</center>
 	
